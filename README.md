@@ -26,5 +26,13 @@ Build the docker image
     docker image build -t myapp:1 .
 
 Run the docker container
-
+    
     docker container run -p 8080:8080 --name myapp myapp:1
+
+### Running the docker container using the image built by maven plugin
+    mvn clean install dockerfile:build 
+    
+Run the docker container
+    
+    docker container run -p 8080:8080 --name myapp myapp:1    
+    
