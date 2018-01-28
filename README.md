@@ -19,3 +19,12 @@ This is a project used to test with Docker. Feel free to clone and add more APIs
 
     GET
     "employee/getAllEmployees"
+    
+### Running the docker file
+Build the docker image
+
+    docker image build -t myapp:1 .
+
+Run the docker container
+
+    docker container run -p 8080:8080 --name myapp myapp:1
